@@ -1,0 +1,632 @@
+.network-container {
+  width: min(
+    1180px,
+    calc(100% - 40px)
+  );
+  margin: 0 auto;
+}
+
+.network-page-hero {
+  padding: 110px 0 80px;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(40, 216, 199, 0.16),
+      transparent 38%
+    ),
+    #081422;
+}
+
+.network-page-hero h1 {
+  max-width: 850px;
+  margin: 12px 0 18px;
+  color: #eef6ff;
+  font-size: clamp(
+    42px,
+    6vw,
+    68px
+  );
+  line-height: 1.05;
+}
+
+.network-page-hero p {
+  max-width: 800px;
+  margin: 0 0 25px;
+  color: #9db0c8;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.network-kicker {
+  color: #28d8c7;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.network-section {
+  padding: 80px 0;
+  background: #07111f;
+}
+
+.network-two-column,
+.network-emergency-grid {
+  display: grid;
+  grid-template-columns:
+    0.9fr 1.1fr;
+  align-items: start;
+  gap: 24px;
+}
+
+.network-card {
+  padding: 25px;
+  border: 1px solid
+    rgba(148, 163, 184, 0.17);
+  border-radius: 20px;
+  color: #eef6ff;
+  background: #101f34;
+}
+
+.network-card h2,
+.network-card h3 {
+  margin-top: 0;
+  color: #eef6ff;
+}
+
+.network-form label,
+.network-card > label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: #dce7f5;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.network-form input,
+.network-form select,
+.network-card textarea {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid
+    rgba(148, 163, 184, 0.22);
+  border-radius: 11px;
+  outline: none;
+  color: #ffffff;
+  background: #07111f;
+}
+
+.network-form input:focus,
+.network-form select:focus,
+.network-card textarea:focus {
+  border-color: #28d8c7;
+}
+
+.network-form-grid {
+  display: grid;
+  grid-template-columns:
+    1fr 1fr;
+  gap: 13px;
+}
+
+.network-checkbox {
+  align-items: center !important;
+  flex-direction: row !important;
+}
+
+.network-checkbox input {
+  width: auto;
+}
+
+.network-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.network-primary-button,
+.network-secondary-button,
+.network-danger-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 43px;
+  padding: 0 15px;
+  border-radius: 11px;
+  font-size: 13px;
+  font-weight: 850;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.network-primary-button {
+  border: 0;
+  color: #051c19;
+  background: #28d8c7;
+}
+
+.network-secondary-button {
+  border: 1px solid
+    rgba(40, 216, 199, 0.34);
+  color: #64ede0;
+  background:
+    rgba(40, 216, 199, 0.08);
+}
+
+.network-danger-button {
+  border: 1px solid
+    rgba(239, 68, 68, 0.35);
+  color: #fecaca;
+  background:
+    rgba(239, 68, 68, 0.09);
+}
+
+.network-primary-button:disabled,
+.network-secondary-button:disabled,
+.network-danger-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.network-full-button {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.network-message {
+  margin-top: 17px;
+  padding: 13px 15px;
+  border-radius: 11px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.network-message.success {
+  border: 1px solid
+    rgba(34, 197, 94, 0.3);
+  color: #bbf7d0;
+  background:
+    rgba(34, 197, 94, 0.09);
+}
+
+.network-message.error {
+  border: 1px solid
+    rgba(239, 68, 68, 0.3);
+  color: #fecaca;
+  background:
+    rgba(239, 68, 68, 0.09);
+}
+
+.network-section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.network-section-heading h2 {
+  margin: 0;
+}
+
+.network-section-heading > span {
+  padding: 5px 9px;
+  border-radius: 999px;
+  color: #28d8c7;
+  background:
+    rgba(40, 216, 199, 0.09);
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.network-contact-list {
+  display: grid;
+  gap: 13px;
+}
+
+.network-contact-card {
+  padding: 20px;
+}
+
+.network-contact-card.compact {
+  padding: 16px;
+  border: 1px solid
+    rgba(148, 163, 184, 0.17);
+  border-radius: 15px;
+  background: #07111f;
+}
+
+.network-contact-card h3 {
+  margin: 8px 0 4px;
+}
+
+.network-contact-card p {
+  margin: 0 0 13px;
+  color: #9db0c8;
+}
+
+.network-contact-card dl,
+.network-public-details {
+  display: grid;
+  grid-template-columns:
+    repeat(2, 1fr);
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.network-contact-card dl div,
+.network-public-details div {
+  padding: 11px;
+  border: 1px solid
+    rgba(148, 163, 184, 0.15);
+  border-radius: 10px;
+  background: #07111f;
+}
+
+.network-contact-card dt,
+.network-public-details dt {
+  margin-bottom: 5px;
+  color: #9db0c8;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.network-contact-card dd,
+.network-public-details dd {
+  margin: 0;
+  color: #eef6ff;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.network-priority {
+  color: #28d8c7;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.network-contact-status {
+  margin-bottom: 12px;
+  color: #9db0c8;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.network-empty {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  color: #9db0c8;
+  text-align: center;
+}
+
+.network-start-panel {
+  min-height: 330px;
+}
+
+.network-status-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(6, 1fr);
+  gap: 11px;
+  margin-bottom: 20px;
+}
+
+.network-status-card {
+  padding: 16px;
+  border: 1px solid
+    rgba(148, 163, 184, 0.17);
+  border-radius: 14px;
+  background: #101f34;
+}
+
+.network-status-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: #9db0c8;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.network-status-card strong {
+  color: #eef6ff;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.network-status-card.good strong {
+  color: #22c55e;
+}
+
+.network-status-card.moderate strong {
+  color: #eab308;
+}
+
+.network-status-card.high strong {
+  color: #ef4444;
+}
+
+.network-alert-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, 1fr);
+  gap: 12px;
+}
+
+.network-alert-button {
+  min-height: 105px;
+  padding: 17px;
+  border: 1px solid
+    rgba(148, 163, 184, 0.17);
+  border-radius: 15px;
+  color: #ffffff;
+  background: #07111f;
+  text-align: left;
+  cursor: pointer;
+}
+
+.network-alert-button strong {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+
+.network-alert-button span {
+  color: #9db0c8;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.network-alert-button.good.active {
+  border-color: #22c55e;
+}
+
+.network-alert-button.moderate.active {
+  border-color: #eab308;
+}
+
+.network-alert-button.high.active {
+  border-color: #ef4444;
+}
+
+.network-alert-button.off.active {
+  border-color: #94a3b8;
+}
+
+.network-alert-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.network-location-panel,
+.network-countdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 13px;
+  margin-top: 17px;
+  padding: 15px;
+  border: 1px solid
+    rgba(148, 163, 184, 0.17);
+  border-radius: 13px;
+  background: #07111f;
+}
+
+.network-location-panel div,
+.network-countdown div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.network-location-panel span,
+.network-countdown span {
+  color: #9db0c8;
+  font-size: 11px;
+}
+
+.network-countdown {
+  border-color:
+    rgba(234, 179, 8, 0.3);
+  background:
+    rgba(234, 179, 8, 0.06);
+}
+
+.network-timeline {
+  margin-top: 24px;
+}
+
+.network-timeline-list {
+  display: grid;
+  gap: 10px;
+}
+
+.network-timeline-list article {
+  padding: 14px;
+  border-left: 3px solid
+    #28d8c7;
+  border-radius: 10px;
+  background: #07111f;
+}
+
+.network-timeline-list article > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.network-timeline-list p {
+  margin: 8px 0;
+  color: #cbd8e7;
+  font-size: 12px;
+}
+
+.network-timeline-list small {
+  color: #7f93aa;
+  font-size: 10px;
+}
+
+.network-warning {
+  padding: 20px 0;
+  border-top: 1px solid
+    rgba(234, 179, 8, 0.23);
+  border-bottom: 1px solid
+    rgba(234, 179, 8, 0.23);
+  color: #d6c98f;
+  background:
+    rgba(234, 179, 8, 0.06);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.network-public-page {
+  display: grid;
+  place-items: center;
+  min-height: 760px;
+  padding: 50px 20px;
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(239, 68, 68, 0.13),
+      transparent 42%
+    ),
+    #07111f;
+}
+
+.network-public-card {
+  width: min(
+    650px,
+    100%
+  );
+  padding: 32px;
+  border: 1px solid
+    rgba(148, 163, 184, 0.18);
+  border-radius: 22px;
+  color: #eef6ff;
+  background: #101f34;
+}
+
+.network-public-card h1 {
+  margin: 12px 0 18px;
+  font-size: 38px;
+}
+
+.network-level-banner {
+  margin-bottom: 18px;
+  padding: 14px;
+  border-radius: 11px;
+  font-weight: 900;
+}
+
+.network-level-banner.good {
+  color: #bbf7d0;
+  background:
+    rgba(34, 197, 94, 0.1);
+}
+
+.network-level-banner.moderate {
+  color: #fde68a;
+  background:
+    rgba(234, 179, 8, 0.1);
+}
+
+.network-level-banner.high {
+  color: #fecaca;
+  background:
+    rgba(239, 68, 68, 0.1);
+}
+
+.network-level-banner.off {
+  color: #cbd5e1;
+  background:
+    rgba(148, 163, 184, 0.1);
+}
+
+.network-note {
+  margin: 17px 0;
+  padding: 15px;
+  border: 1px solid
+    rgba(148, 163, 184, 0.17);
+  border-radius: 12px;
+  background: #07111f;
+}
+
+.network-note p {
+  margin-bottom: 0;
+  color: #cbd8e7;
+}
+
+.network-map-link {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.network-response-actions {
+  display: grid;
+  grid-template-columns:
+    1fr 1fr;
+  gap: 11px;
+}
+
+.network-public-warning {
+  margin: 20px 0 0;
+  color: #d6c98f;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1050px) {
+  .network-status-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .network-two-column,
+  .network-emergency-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .network-container {
+    width: min(
+      100% - 26px,
+      1180px
+    );
+  }
+
+  .network-page-hero {
+    padding: 90px 0 65px;
+  }
+
+  .network-page-hero h1 {
+    font-size: 42px;
+  }
+
+  .network-status-grid,
+  .network-alert-grid,
+  .network-form-grid,
+  .network-contact-card dl,
+  .network-public-details,
+  .network-response-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .network-location-panel,
+  .network-countdown {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .network-card,
+  .network-public-card {
+    padding: 19px;
+  }
+}
